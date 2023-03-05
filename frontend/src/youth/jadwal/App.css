@@ -1,0 +1,23 @@
+.col-hour {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.time-container {
+    height: 500px;
+    overflow: auto;
+}
+
+.box-today-activity-body-content {
+    background-color: #00CCCC;
+}
+
+.box-today-activity-body-content-btn:hover {
+    background-color: #13B3AE;
+}
+
+.stickyIsTrue {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

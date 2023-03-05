@@ -1,0 +1,93 @@
+.profile-banner-container {
+    width: 100%;
+    height: 200px;
+    
+}
+
+.profile-banner-content {
+    width: inherit;
+    height: inherit;
+}
+
+.profile-picture-container {
+    position: relative;
+    top: -50%;
+    width: 120px;
+    padding-left: 50px;
+    align-items: end;
+}
+
+@media only screen and (max-width:' 600px') {
+    .profile-picture-container{
+        padding-left: 0;
+    }
+    
+}
+
+.profile-picture-content {
+    position: relative;
+    top: 70%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+}
+
+#edit-profile-btn{
+    height: 40px;
+    width: 180px;
+    right: 0;
+}
+
+#edit-profile-icon {
+    height: inherit;
+    width: 32px;
+}
+
+.user-data-container {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.user-data-title {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.user-data-text{
+    font-size: 20px;
+    text-align: end;
+    font-weight: bold;
+}
+
+.default-church-icon {
+    width: 54px;
+    height: 100%;
+}
+
+.box-header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box-header-icon {
+    
+}
+
+.box-header-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-body {
+    padding-top: 15px;
+}
+
+.box-body-text {
+    font-size: 20px;
+    text-align: center;
+}

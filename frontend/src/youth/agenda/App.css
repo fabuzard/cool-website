@@ -1,0 +1,24 @@
+.agenda-box-container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.agenda-box-title {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.agenda-box-subtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.agenda-text {
+    font-size: 20px;
+}
+
+.branch-logo {
+    height: 80px;
+    width: fit-content;
+}

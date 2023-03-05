@@ -1,0 +1,13 @@
+.cool-su-page {
+    background-image: url('./signup-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }

@@ -1,0 +1,17 @@
+.navbarLogo {
+    height: 100%;
+    width: 100%;
+}
+
+.navbarText{
+    font-size: 30px;
+}
+
+.navbarBackground{
+    background-color: white;
+}
+
+.navbarItemContainer {
+    padding-left: 1px;
+    padding-right: 1px;
+}

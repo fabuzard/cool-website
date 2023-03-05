@@ -1,0 +1,21 @@
+.content-text{
+    inline-size: auto;
+    overflow-wrap: break-word;
+}
+
+.box-verse-container {
+    padding-bottom: 20px;
+}
+
+.box-verse:hover{
+    background-color: pink;
+}
+
+.box-hover:hover{
+    background-color: pink;
+}
+
+.box-title {
+    font-size: 28px;
+    font-weight: bold;
+}
