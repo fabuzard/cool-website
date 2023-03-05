@@ -49,9 +49,9 @@ class SignupViews(APIView):
 
     def post(self, request, format=None):
         data = self.request.data
-
-        username = data['username']
-        password = data['password']
+        print(data)
+        username = data["username"]
+        password = data["password"]
         re_password = data['re_password']
         print('Username received :', username)
         print('Password received :', password)
