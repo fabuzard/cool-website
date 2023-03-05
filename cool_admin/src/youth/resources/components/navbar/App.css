@@ -1,0 +1,33 @@
+.nav-tab-container {
+    margin: 30px 90px 0px 30px;
+}
+
+.brand-logo {
+    height: 130px;
+}
+
+.brand-logo-content {
+    height: inherit;
+    width: inherit;
+}
+
+.isActive {
+    background-color: #312D9A;
+    color: white;
+}
+.isActive:hover {
+    background-color: #3B37A8;
+    color: white;
+}
+
+.nav-btn {
+    width: 100%;
+}
+
+.nav-btn:hover {
+    background-color: #312D9A;
+    color: white;
+}
+.nav-link:hover {
+    color: white;
+}
