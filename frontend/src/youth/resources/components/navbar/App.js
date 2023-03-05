@@ -8,40 +8,47 @@ function Navbar() {
 
     const getPath = window.location.pathname;
 
-    let defaultItemAttr = 'nav-item mx-3';
-    let defaultLinkAttr = 'nav-link navbarText';
+    let defaultItemClass = 'nav-item mx-3';
+    let defaultLinkClass = 'nav-link navbarContent';
+    let defaultImgClass = '';
 
-    let jadwal_item = defaultItemAttr;
-    let jadwal_link = defaultLinkAttr;
+    let jadwal_item = defaultItemClass;
+    let jadwal_link = defaultLinkClass;
+    let jadwal_img = defaultImgClass;
 
-    let renungan_item = defaultItemAttr;
-    let renungan_link = defaultLinkAttr;
+    let renungan_item = defaultItemClass;
+    let renungan_link = defaultLinkClass;
+    let renungan_img = defaultImgClass;
 
 
-    let agenda_item = defaultItemAttr;
-    let agenda_link = defaultLinkAttr;
+    let agenda_item = defaultItemClass;
+    let agenda_link = defaultLinkClass;
+    let agenda_img = defaultImgClass;
 
-    let biodata_item = defaultItemAttr.concat(defaultItemAttr, ' dropdown');
-    let biodata_link = defaultLinkAttr.concat(defaultLinkAttr, ' dropdown-toggle');
+    let biodata_item = defaultItemClass.concat(defaultItemClass, ' dropdown');
+    let biodata_link = defaultLinkClass.concat(defaultLinkClass, ' dropdown-toggle');
 
     if (getPath === '/jadwal'){
-        jadwal_item = jadwal_item.concat(' ', 'active');
-        jadwal_link = jadwal_link.concat(' ', 'active');
+        jadwal_item = jadwal_item.concat(' ', 'itemActive');
+        jadwal_link = jadwal_link.concat(' ', 'linkActive');
+        jadwal_img = jadwal_img.concat(' ', 'imgActive');
         console.log(jadwal_item, jadwal_link)
     }
     else if (getPath === '/renungan'){
-        renungan_item = renungan_item.concat(' ', 'active');
-        renungan_link = renungan_link.concat(' ', 'active');
+        renungan_item = renungan_item.concat(' ', 'itemActive');
+        renungan_link = renungan_link.concat(' ', 'linkActive');
+        renungan_img = jadwal_img.concat(' ', 'imgActive');
         console.log(renungan_item, renungan_link)
     }
     else if (getPath === '/agenda'){
-        agenda_item = agenda_item.concat(' ', 'active');
-        agenda_link = agenda_link.concat(' ', 'active');
+        agenda_item = agenda_item.concat(' ', 'itemActive');
+        agenda_link = agenda_link.concat(' ', 'linkActive');
+        agenda_img = jadwal_img.concat(' ', 'imgActive');
         console.log(agenda_item, agenda_link)
 
     }else if (getPath === '/biodata') {
-        biodata_item = biodata_item.concat(' ', 'active');
-        biodata_link = biodata_link.concat(' ', 'active');
+        biodata_item = biodata_item.concat(' ', 'itemActive');
+        biodata_link = biodata_link.concat(' ', 'linkActive');
         console.log(biodata_item, biodata_link)
     }
     
@@ -55,18 +62,18 @@ function Navbar() {
                 <a className="navbar-brand" href="/login">
                     <img src={brandLogo} alt="gbi-suropati-malang" width={'100%'} height={'100px'} ></img>
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 
-                    <ul className="navbar-nav justify-content-end">
+                    <ul className="navbar-nav">
                         <li className={jadwal_item}>
                             <a className={jadwal_link} aria-current="page" href="/jadwal">
-                                <div className='row navbarItemContaine text-center'>
+                                <div className='row navbarItemContainer text-center'>
                                     <div className='col-1'>
-                                        <img src={jadwalLogo} alt=''></img>
+                                        <img src={jadwalLogo} alt='' className={jadwal_img}></img>
                                     </div>
                                     <div className='col-1'>Jadwal</div>
                                 </div>
@@ -74,9 +81,9 @@ function Navbar() {
                         </li>
                         <li className={renungan_item}>
                             <a className={renungan_link} id='navbar-renungan' href="/renungan">
-                                <div className='row navbarItemContaine text-center'>
+                                <div className='row navbarItemContainer text-center'>
                                     <div className='col-1'>
-                                        <img src={renunganLogo} alt=''></img>
+                                        <img src={renunganLogo} alt='' className={renungan_img}></img>
                                     </div>
                                     <div className='col-1'>Renungan</div>
                                 </div>
@@ -84,9 +91,9 @@ function Navbar() {
                         </li>
                         <li className={agenda_item}>
                             <a className={agenda_link} href="/agenda">
-                                <div className='row navbarItemContaine text-center'>
+                                <div className='row navbarItemContainer text-center'>
                                     <div className='col-1'>
-                                        <img src={agendaLogo} alt=''></img>
+                                        <img src={agendaLogo} alt='' className={agenda_img}></img>
                                     </div>
                                     <div className='col-1'>Agenda</div>
                                 </div>

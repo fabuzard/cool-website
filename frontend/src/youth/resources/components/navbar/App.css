@@ -3,8 +3,22 @@
     width: 100%;
 }
 
-.navbarText{
+.navbarContent{
     font-size: 30px;
+    text-align: end;
+}
+
+.navbarText {
+    text-align: end;
+}
+
+.navbarContent:hover{
+    color: #Ec0306;
+    border-bottom: 1px solid #Ec0306;
+}
+
+.inv-btn {
+    visibility:hidden;
 }
 
 .navbarBackground{
@@ -14,4 +28,18 @@
 .navbarItemContainer {
     padding-left: 1px;
     padding-right: 1px;
+}
+
+.linkActive {
+    font-weight: bold;
+    color: #Ec0306;
+    border-bottom: 1px solid #Ec0306;
+}
+
+.linkActive:hover {
+    color: red;
+}
+
+.imgActive {
+    filter: invert(11%) sepia(74%) saturate(7313%) hue-rotate(355deg) brightness(97%) contrast(107%);
 }
