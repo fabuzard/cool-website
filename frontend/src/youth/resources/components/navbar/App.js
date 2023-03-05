@@ -44,7 +44,7 @@ function Navbar() {
         agenda_item = agenda_item.concat(' ', 'itemActive');
         agenda_link = agenda_link.concat(' ', 'linkActive');
         agenda_img = jadwal_img.concat(' ', 'imgActive');
-        console.log(agenda_item, agenda_link)
+      
 
     }else if (getPath === '/biodata') {
         biodata_item = biodata_item.concat(' ', 'itemActive');
