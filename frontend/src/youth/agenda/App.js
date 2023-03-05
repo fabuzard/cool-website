@@ -1,8 +1,15 @@
+import react, { useEffect, useState } from 'react'
+import { helmet } from 'react-helmet'
+
 import './App.css';
 import Navbar from '../resources/components/navbar/App';
 import logo_Men_Armed from '../resources/img/profile-picture.jpg'
 
 function YAgenda() {
+  useEffect(() => {
+    document.title='Agenda';
+  }, []);
+  
   return (
     /* Navigation Bar */
         <div>
