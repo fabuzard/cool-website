@@ -46,8 +46,6 @@ function YSignup() {
         });
 
         console.log(requestBody)
-
-        console.log(requestBody)
         fetch('http://localhost:8000/api/csrf_cookie');
         fetch('http://localhost:8000/api/register', {
             method: 'POST',
