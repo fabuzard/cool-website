@@ -49,7 +49,7 @@ function Navbar() {
     }else if (getPath === '/biodata') {
         biodata_item = biodata_item.concat(' ', 'itemActive');
         biodata_link = biodata_link.concat(' ', 'linkActive');
-        console.log(biodata_item, biodata_link)
+      
     }
     
 
